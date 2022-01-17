@@ -56,7 +56,7 @@ namespace AssettoCorsaSharedMemory
         public float AidFuelRate;
         public float AidTireRate;
         public float AidMechanicalDamage;
-        public int AidAllowTyreBlankets;
+        public float AidAllowTyreBlankets;
         public float AidStability;
         public int AidAutoClutch;
         public int AidAutoBlip;
