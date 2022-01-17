@@ -72,6 +72,27 @@ namespace AssettoCorsaSharedMemory
         ACC_REARRIGHT = 3,
     }
 
+    public enum ACC_TRACK_GRIP_STATUS
+    {
+        ACC_GREEN = 0,
+        ACC_FAST = 1,
+        ACC_OPTIMUM = 2,
+        ACC_GREASY = 3,
+        ACC_DAMP = 4,
+        ACC_WET = 5,
+        ACC_FLOODED = 6
+  }
+
+    public enum ACC_RAIN_INTENSITY
+    {
+        ACC_NO_RAIN = 0,
+        ACC_DRIZZLE = 1,
+        ACC_LIGHT_RAIN = 2,
+        ACC_MEDIUM_RAIN = 3,
+        ACC_HEAVY_RAIN = 4,
+        ACC_THUNDERSTORM = 5
+    }
+    
     public class GraphicsEventArgs : EventArgs
     {
         public GraphicsEventArgs (Graphics graphics)
@@ -172,5 +193,28 @@ namespace AssettoCorsaSharedMemory
 
         public int directionLightsLeft;
         public int directionLightsRight;
-    }
+
+        public int GlobalYellow;
+        public int GlobalYellow1;
+        public int GlobalYellow2;
+        public int GlobalYellow3;
+        public int GlobalWhite;
+        public int GlobalGreen;
+        public int GlobalChequered;
+        public int GlobalRed;
+        public int mfdTyreSet;
+        public float mfdFuelToAdd;
+        public float mfdTyrePressureLF;
+        public float mfdTyrePressureRF;
+        public float mfdTyrePressureLR;
+        public float mfdTyrePressureRR;
+        public ACC_TRACK_GRIP_STATUS trackGripStatus;
+        public ACC_RAIN_INTENSITY rainIntensity;
+        public ACC_RAIN_INTENSITY rainIntensityIn10min;
+        public ACC_RAIN_INTENSITY rainIntensityIn30min;
+        public int currentTyreSet;
+        public int strategyTyreSet;
+        public int gapAhead;
+        public int gapBehind; 
+  }
 }

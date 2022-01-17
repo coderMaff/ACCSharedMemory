@@ -1,4 +1,6 @@
-This package is based on https://github.com/mdjarv/assettocorsasharedmemory. I've only made it work with ACC
+This package is based on https://github.com/ProBun/ACCSharedMemory who made this https://github.com/mdjarv/assettocorsasharedmemory work with ACC.
+
+Maff updated it to ACC 1.8.x from documentation supplied here : https://www.assettocorsa.net/forum/index.php?threads/acc-shared-memory-documentation.59965/
 
 Assetto Corsa Shared Memory Library
 ===================================
@@ -25,8 +27,8 @@ These events have individual timers and their respective update intervals can be
 The default update intervals are:
 
 ```
-AssettoCorsa.SharedInfoInterval: 3000 ms
-AssettoCorsa.GraphicsInterval: 10000 ms
+AssettoCorsa.StaticInfoInterval: 1000 ms
+AssettoCorsa.GraphicsInterval: 1000 ms
 AssettoCorsa.PhysicsInterval: 10 ms
 ```
 

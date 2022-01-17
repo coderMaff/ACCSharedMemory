@@ -92,14 +92,14 @@ namespace AssettoCorsaSharedMemory
         public float FinalFF;
 
         public float PerformanceMeter; //Not used in ACC
-        public float EngineBrake; //Not used in ACC
-        public float ErsRecoveryLevel; //Not used in ACC
-        public float ErsPowerLeve; //Not used in ACC
-        public float ErsHeatCharging; //Not used in ACC
-        public float ErsIsCharging; //Not used in ACC
+        public int EngineBrake; //Not used in ACC
+        public int ErsRecoveryLevel; //Not used in ACC
+        public int ErsPowerLeve; //Not used in ACC
+        public int ErsHeatCharging; //Not used in ACC
+        public int ErsIsCharging; //Not used in ACC
         public float KersCurrentKJ; //Not used in ACC
-        public float DrsAvailable; //Not used in ACC
-        public float DrsEnabled; //Not used in ACC
+        public int DrsAvailable; //Not used in ACC
+        public int DrsEnabled; //Not used in ACC
 
         [MarshalAs (UnmanagedType.ByValArray, SizeConst = 4)]
         public float[] BrakeTemp;
@@ -133,13 +133,13 @@ namespace AssettoCorsaSharedMemory
         [MarshalAs (UnmanagedType.ByValArray, SizeConst = 4)]
         public float[] MZ; //Not used in ACC
         [MarshalAs (UnmanagedType.ByValArray, SizeConst = 4)]
-        public float[] FZ; //Not used in ACC
+        public float[] FX; //Not used in ACC
         [MarshalAs (UnmanagedType.ByValArray, SizeConst = 4)]
         public float[] FY; //Not used in ACC
         [MarshalAs (UnmanagedType.ByValArray, SizeConst = 4)]
-        public float[] SlipRatio; //Not used in ACC
+        public float[] SlipRatio; 
         [MarshalAs (UnmanagedType.ByValArray, SizeConst = 4)]
-        public float[] SlipAngle; //Not used in ACC
+        public float[] SlipAngle; 
 
         public int TCInAction; //Not used in ACC
         public int ABSInAction; //Not used in ACC

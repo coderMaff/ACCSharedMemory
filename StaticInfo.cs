@@ -80,5 +80,10 @@ namespace AssettoCorsaSharedMemory
         public int PitWindowStart;
         public int PitWindowEnd;
         public int IsOnline;
-    }
+
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 33)]
+        public String dryTyresName;
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 33)]
+        public String wetTyresName;
+  }
 }
